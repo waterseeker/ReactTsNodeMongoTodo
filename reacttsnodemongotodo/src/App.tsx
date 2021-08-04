@@ -49,11 +49,11 @@ const App: React.FC = () => {
       })
       .catch((err) => console.log(err))
   }
-  const addTodoProps = {
-      saveTodo: this.props.saveTodo,
+  const addTodoProps = { 
+      saveTodo: handleUpdateTodo,
       todo: this.props.todo,
-      updateTodo: this.props.updateTodo,
-      deleteTodo: this.props.deleteTodo
+      updateTodo: updateTodo,
+      deleteTodo: deleteTodo
   }
 
   return (
